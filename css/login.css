@@ -1,0 +1,159 @@
+header {
+    /* padding-top: 116px; 높이 844px 기준 */
+    padding-top: 26%;
+}
+@media screen and (max-width: 375px) {
+    header {
+        padding-top: 20%;
+    }
+}
+
+#inner-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+header h1, h2 {
+    font-family: 'Collager';
+}
+header h1 {
+    font-size: 36px;
+    margin-bottom: 26px;
+    color: #6C5B5B;
+}
+header h2 {
+    font-size: 40px;
+    line-height: 1.25;
+}
+header h2 img {
+    width: 18px;
+    margin-left: 4px;
+    vertical-align: text-bottom;
+}
+header p {
+    letter-spacing: -0.4px;
+    padding-top: 10px;
+}
+
+section {
+    text-align: center;
+}
+section form p {
+    margin-bottom: 8px;
+    position: relative;
+}
+section form p label {
+    width: 17px;
+    height: 17px;
+    display: block;
+    position: absolute;
+    background-image: url(../img/i_id.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+section form p label[for="userPW"] {
+    background-image: url(../img/i_pw.svg);
+    margin-top: 18px;
+}
+section form p input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 55px;
+    border-radius: 6px;
+    background-color: #F2F2F2;
+    padding-left: 52px;
+}
+section form p input::placeholder {
+    font-size: 14px;
+    color: #919191;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+section form p .login {
+    display: block;
+    margin-top: 16px;
+    height: 48px;
+    border: 0.5px solid #707070;
+    border-radius: 6px;
+    font-family: 'Collager';
+    line-height: 48px;
+}
+section .break {
+    width: 100%;
+    height: 1px;
+    margin-top: 32px;
+    background-color: #D3D3D3;
+}
+
+footer {
+    padding: 50px 0 26% 0;
+    text-align: center;
+}
+@media screen and (max-width: 375px) {
+    footer {
+        padding: 10% 0;
+    }
+}
+
+footer span {
+    color: #919191;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 6px;
+    margin-top: 20px;
+}
+footer ul li a {
+    width: 35px;
+    height: 35px;
+    border: 0.2px solid #707070;
+    border-radius: 50px;
+    display: block;
+    background-image: url("../img/i_facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer ul li:nth-child(2) a {
+    background-image: url("../img/i_google.svg");
+}
+footer ul li:nth-child(3) a {
+    background-image: url("../img/i_apple.svg");
+}
+
+
+/* splash screen */
+#splash {
+    /* display: none; */
+    background-color: #CBBFAD;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#splash .splash-wrap {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#splash h2 {
+    padding-top: 36.5px;
+    animation: fadein 1.2s ease-in;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

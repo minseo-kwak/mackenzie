@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order — mackenzie</title>
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/my-reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+   <header>
+      <div id="wrap">
+         <div id="inner-wrap">
+            <h1>order</h1>
+            <h2>START YOUR<br>JOURNEY HERE</h2>
+            <button class="btn-search"><span class="hide">Search</span></button>
+         </div>
+      </div>
+      <nav>
+         <div id="inner-wrap">
+            <ul class="gnb">
+               <li>
+                  <a href="home.html"><span class="hide">Home</span><span class="material-icons gnb act">home_filled</span></a>
+               </li>
+               <li>
+                  <a href="cart.html"><span class="hide">Cart</span><span class="material-icons gnb">shopping_cart</span></a>
+               </li>
+               <li>
+                  <a href="favorite.html"><span class="hide">Favorite</span><span class="material-icons gnb">favorite</span></a>
+               </li>
+               <li>
+                  <a href="notifications.html"><span class="hide">Notification</span><span class="material-icons gnb">notifications</span></a>
+               </li>
+            </ul> 
+         </div>
+      </nav>
+   </header>
+   <div id="wrap">
+      <div id="menu-filter">
+         <ul>
+            <li class="filter-coffee"><a href="#" class="active">Coffee</a></li>
+            <li class="filter-non"><a href="#">Non-Coffee</a></li>
+            <li class="filter-dessert"><a href="#">Dessert</a></li>
+         </ul>
+      </div>
+      <section id="section-coffee" class="active">
+         <div id="inner-wrap">
+            <h3 class="hide">메뉴 리스트</h3>
+            <div class="detail-filter">
+               <ul>
+                  <li class="all-menu active"><a href="#">ALL</a></li>
+                  <li class="espresso-variation"><a href="#">에스프레소 베리에이션</a></li>
+                  <li class="latte"><a href="#">라떼</a></li>
+               </ul>
+            </div>
+            <ul class="order-menulist">
+               <li class="all ev">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/coffee/coffee01.png" alt="에스프레소">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">에스프레소</a>
+                        <span class="price">3,300</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all ev">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/coffee/coffee02.png" alt="아메리카노">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">아메리카노</a>
+                        <span class="price">4,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all lt">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/coffee/coffee03.png" alt="카페라떼">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">카페라떼</a>
+                        <span class="price">5,000</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all ev">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/coffee/coffee04.png" alt="카푸치노">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">카푸치노</a>
+                        <span class="price">5,000</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all ev">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/coffee/coffee05.png" alt="카라멜 마끼아또">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">카라멜 마끼아또</a>
+                        <span class="price">5,900</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section id="section-non">
+         <div id="inner-wrap">
+            <h3 class="hide">메뉴 리스트</h3>
+            <div class="detail-filter">
+               <ul>
+                  <li class="all-menu active"><a href="#">ALL</a></li>
+                  <li class="tea-variation"><a href="#">티 베리에이션</a></li>
+                  <li class="drink-yogurt"><a href="#">음료·요거트</a></li>
+               </ul>
+            </div>
+            <ul class="order-menulist">
+               <li class="all tv">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/non-coffee/non01.png" alt="로얄밀크티">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">로얄밀크티</a>
+                        <span class="price">5,100</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all tv">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/non-coffee/non02.png" alt="캐모마일티">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">캐모마일티</a>
+                        <span class="price">5,100</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all tv">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/non-coffee/non03.png" alt="얼그레이티">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">얼그레이티</a>
+                        <span class="price">5,100</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all tv">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/non-coffee/non04.png" alt="허니레몬티">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">허니레몬티</a>
+                        <span class="price">5,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all dy">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/non-coffee/non05.png" alt="블루베리 요거트">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">블루베리 요거트</a>
+                        <span class="price">5,800</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all dy">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/non-coffee/non06.png" alt="생딸기 주스">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">생딸기 주스</a>
+                        <span class="price">6,100</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all tv">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/non-coffee/non07.png" alt="그린티 라떼">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">그린티 라떼</a>
+                        <span class="price">5,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all dy">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/non-coffee/non08.png" alt="스팀 우유">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">스팀 우유</a>
+                        <span class="price">1,300</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section id="section-dessert">
+         <div id="inner-wrap">
+            <h3 class="hide">메뉴 리스트</h3>
+            <div class="detail-filter">
+               <ul>
+                  <li class="all-menu active"><a href="#">ALL</a></li>
+                  <li class="vegan"><a href="#">비건</a></li>
+               </ul>
+            </div>
+            <ul class="order-menulist">
+               <li class="all vg">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert01.png" alt="스트로베리 무스 케이크">
+                        <img src="img/i_vegan.svg" alt="비건" class="icon-vegan">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">스트로베리 무스 케이크</a>
+                        <span class="price">7,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert02.png" alt="베리 쉬폰 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">베리 쉬폰 케이크</a>
+                        <span class="price">6,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert03.png" alt="카라멜 치즈 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">카라멜 치즈 케이크</a>
+                        <span class="price">6,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert04.png" alt="치즈 무스 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">치즈 무스 케이크</a>
+                        <span class="price">7,000</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all vg">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert05.png" alt="쇼콜라 무스">
+                        <img src="img/i_vegan.svg" alt="비건" class="icon-vegan">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">쇼콜라 무스</a>
+                        <span class="price">7,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all vg">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert06.png" alt="망고 푸딩">
+                        <img src="img/i_vegan.svg" alt="비건" class="icon-vegan">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">망고 푸딩</a>
+                        <span class="price">5,000</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li class="all">
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert07.png" alt="비스켓 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">비스켓 케이크</a>
+                        <span class="price">6,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <div class="popup-search">
+         <div class="search-box">
+            <div id="inner-wrap">
+               <h4>search</h4>
+               <form action="#">
+                  <label for="searchword" class="hide">Search</label>
+                  <input type="text" id="searchword" placeholder="어떤 메뉴를 찾으세요?">
+                  <button type="button" class="btn-box-search">Search</button>
+               </form>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <p class="hide">Copyright &copy; mackenzie 2022</p>
+      </footer>
+   </div>
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      speed: 1000,
+      pagination: {
+         el: ".swiper-pagination",
+      },
+      autoplay: {
+         delay: 5000,
+         disableOnInteraction: false,
+      },
+   });
+   </script>
+   
+   <script src="js/order.js"></script>
+</body>
+</html>

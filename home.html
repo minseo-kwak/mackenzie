@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — mackenzie</title>
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/my-reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+   <header>
+      <div id="wrap">
+         <div id="inner-wrap">
+            <h1>home</h1>
+            <h2>Welcome, Guest_1.</h2>
+         </div>
+      </div>
+      <nav>
+         <div id="inner-wrap">
+            <ul class="gnb">
+               <li>
+                  <a href="home.html"><span class="hide">Home</span><span class="material-icons gnb act">home_filled</span></a>
+               </li>
+               <li>
+                  <a href="cart.html"><span class="hide">Cart</span><span class="material-icons gnb">shopping_cart</span></a>
+               </li>
+               <li>
+                  <a href="favorite.html"><span class="hide">Favorite</span><span class="material-icons gnb">favorite</span></a>
+               </li>
+               <li>
+                  <a href="notifications.html"><span class="hide">Notification</span><span class="material-icons gnb">notifications</span></a>
+               </li>
+            </ul> 
+         </div>
+      </nav>
+   </header>
+   <div id="wrap">
+      <section id="slide">
+         <h3 class="hide">이벤트 슬라이드</h3>
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/banner_1.svg" alt="NEW APRIL 2022"></div>
+                  <div class="swiper-slide"><img src="img/banner_2.svg" alt="Afternoon Teatime with Spring Breeze"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </section>
+      <section id="home-menu">
+         <div id="inner-wrap">
+            <h3>한가한 오후를 위해,</h3>
+            <a href="order.html" class="btn-to-order">ORDER NOW</a>
+         </div>
+         <div class="scroll">
+            <ul class="home-menulist">
+               <li>
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert07.png" alt="비스켓 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">비스켓 케이크</a>
+                        <span class="price">6,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li>
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert03.png" alt="카라멜 치즈 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">카라멜 치즈 케이크</a>
+                        <span class="price">6,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li>
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert01.png" alt="스트로베리 무스 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">스트로베리 무스<br>케이크</a>
+                        <span class="price">6,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <footer>
+         <p class="hide">Copyright &copy; mackenzie 2022</p>
+      </footer>
+   </div>
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      speed: 1000,
+      pagination: {
+         el: ".swiper-pagination",
+      },
+      autoplay: {
+         delay: 5000,
+         disableOnInteraction: false,
+      },
+   });
+
+   $(function(){
+    $('.home-menulist li .txt-box .btn-add').click(function(){
+        $(this).toggleClass('added')
+    });
+   });
+   </script>
+</body>
+</html>

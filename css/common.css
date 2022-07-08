@@ -1,0 +1,39 @@
+header {
+    font-family: 'Collager';
+    padding-top: 100px;
+}
+header h1 {
+    font-size: 36px;
+    color: #6C5B5B;
+}
+header h2 {
+    font-size: 40px;
+    padding-top: 14px;
+    line-height: 1.25;
+}
+
+/* navigation */
+nav {
+    width: 100vw;
+    margin: 0 auto;
+    height: 85px;
+    background-color: #6C5B5B;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    z-index: 20;
+    padding: 0 8px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+} 
+nav ul li .gnb {
+    font-size: 38px;
+    color: #A39389;
+}
+nav ul li .act {
+    color: #D3C4B2;
+}

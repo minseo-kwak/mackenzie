@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mackenzie</title>
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/my-reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+   <div id="wrap">
+      <div id="inner-wrap">
+         <div class="flex-1">
+            <header>
+               <h1>mackenzie</h1>
+               <h2>YOUR JOURNEY<br>WITH COFFEE<img src="img/i_dot.svg" alt="."></h2>
+               <p>당신의 여유로운 시간을 함께하세요.</p>
+            </header>
+         </div>
+         <div class="flex-2">
+            <section>
+                  <h2 class="hide">Login</h2>
+                  <form action="#" method="post" name="login_form">
+                     <p>
+                        <label for="userID"><span class="hide">ID</span></label>
+                        <input type="text" id="userID" placeholder="ID">
+                     </p>
+                     <p>
+                        <label for="userPW"><span class="hide">PASSWORD</span></label>
+                        <input type="password" id="userPW" placeholder="PASSWORD">
+                     </p>
+                     <p>
+                        <a href="home.html" class="login">LOGIN</a>
+                     </p>
+                  </form>
+                  <div class="break"></div>
+            </section>
+            <footer>
+                  <span>CREATE NEW ACCOUNT</span>
+                  <h3 class="hide">via sns</h3>
+                  <ul>
+                     <li><a href="#"><span class="hide">Facebook</span></a></li>
+                     <li><a href="#"><span class="hide">Google</span></a></li>
+                     <li><a href="#"><span class="hide">Apple</span></a></li>
+                  </ul>
+            </footer>
+         </div>
+      </div>
+
+      <section id="splash">
+         <div class="splash-wrap">
+            <h1><a href="#"><img src="img/symbol.svg" alt="symbol"></a></h1>
+            <h2><a href="#"><img src="img/logo.svg" alt="mackenzie"></a></h2>
+         </div>
+      </section>
+   </div>
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+      $(function(){
+         $('#splash').delay(2000).fadeOut(1300);
+      });
+   </script>
+</body>
+</html>
