@@ -27,24 +27,20 @@ header .btn-search {
 }
 #menu-filter ul li {
     width: 33.333%;
-}
-#menu-filter ul li a {
     padding: 20px 0;
+    cursor: pointer;
 }
-#menu-filter ul li a.active {
+#menu-filter ul li.active {
     border-bottom: 3px solid #6C5B5B;
 }
 
-section {
+.tabcont {
     padding-bottom: 110px;
-}
-/* #section-coffee {}
-#section-non {
     display: none;
 }
-#section-dessert {
-    display: none;
-} */
+.tabcont.active {
+    display: block;
+}
 
 .detail-filter {
     padding: 20px 0;
@@ -61,7 +57,7 @@ section {
 .detail-filter ul li {
     width: 33.333%;
 }
-.detail-filter ul li.active a {
+.detail-filter ul li.active {
     font-weight: 500;
 }
 .detail-filter ul li a {
@@ -79,6 +75,7 @@ section {
 .order-menulist li {
     width: calc(50% - 10px);
     position: relative;
+    padding-bottom: 20px;
 }
 .order-menulist li .img-box {
     position: relative;
@@ -113,7 +110,7 @@ section {
     height: 28px;
     border-radius: 8px;
     position: absolute;
-    bottom: 12px;
+    bottom: 32px;
     right: 12px;
 
     background-image: url(../img/i_add.svg);
