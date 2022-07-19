@@ -1,0 +1,297 @@
+header {
+    padding: 0;
+}
+#wrap {
+    position: relative;
+}
+.btn-prev {
+    background-image: url(../img/i_prev.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+}
+
+#menu-detail .menu-img {
+    background-image: url(../img/menu_img.png);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+#menu-detail .menu-info {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    position: relative;
+    border-bottom: 1px solid #D3D3D3;
+}
+#menu-detail .menu-info h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+#menu-detail .menu-info p {
+    font-size: 15px;
+    line-height: 1.4;
+    padding-top: 12px;
+}
+#menu-detail .menu-info .info-btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 28px;
+    right: 0;
+}
+#menu-detail .menu-info .info-btn .btn-fav {
+    background-image: url(../img/i_fav.svg);
+    width: 25px;
+    height: 22px;
+    margin-right: 18px;
+    transition: 0.3s;
+}
+#menu-detail .menu-info .info-btn .favchk {
+    background-image: url(../img/i_fav_after.svg);
+}
+#menu-detail .menu-info .info-btn .btn-add {
+    width: 92px;
+    height: 35px;
+    border: 1.2px solid #6C5B5B;
+    border-radius: 8px;
+
+    background-image: url(../img/i_cart.svg);
+    background-repeat: no-repeat;
+    background-position: 18px center;
+    color: #6C5B5B;
+}
+#menu-detail .menu-info .info-btn .addchk {
+    background-color: #6C5B5B;
+    color: #fff;
+    background-image: url(../img/i_cart_after.svg);
+}
+#menu-detail .menu-info .info-btn .btn-add span {
+    padding-left: 26px;
+    font-size: 15px;
+    font-weight: 500;
+    vertical-align: top;
+}
+
+#option {
+    padding-top: 8px;
+}
+#option [class^=container] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+#option [class^=option] {
+    padding: 10px 0;
+}
+.opt-name {
+    font-size: 18px;
+    font-weight: 500;
+}
+.opt-about {
+    display: inline-block;
+    margin-top: 8px;
+    color: #919191;
+}
+
+#option .select input[type=radio] {
+    display: none;
+}
+#option .select input[type=radio]+label {
+    display: inline-block;
+    cursor: pointer;
+    width: 124px;
+    height: 36px;
+    border: 1.2px solid #6C5B5B;
+    border-radius: 8px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 8px;
+}
+#option .select input[type=radio]+label {
+    background-color: #fff;
+    color: #6C5B5B;
+}
+#option .select input[type=radio]:checked+label {
+    background-color: #6C5B5B;
+    color: #fff;
+}
+
+#option .btn-more {
+    background-image: url(../img/i_add_black.svg);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+#option .btn-more-after {
+    background-image: url(../img/i_more.svg);
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+#option .btn-more-2 {
+    background-image: url(../img/i_more.svg);
+    background-position: 16px center;
+}
+
+#option .opt-list {
+    display: none;
+}
+#option .opt-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+}
+
+#option .opt-list li p {
+    color: #6C5B5B;
+    font-weight: 500;
+}
+#option .select-2 input[type=radio] {
+    display: none;
+}
+#option .select-2 input[type=radio]+label {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 36px;
+    border: 1.2px solid #6C5B5B;
+    border-radius: 8px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 8px;
+}
+#option .select-2 input[type=radio]+label {
+    background-color: #fff;
+    color: #6C5B5B;
+}
+#option .select-2 input[type=radio]:checked+label {
+    background-color: #6C5B5B;
+    color: #fff;
+}
+
+#option textarea {
+    background-color: #EFE4D8;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-top: 24px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 16px;
+}
+
+.nutrition-info {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+.info-box {
+    background-color: #fff;
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 85px;
+    border-radius: 30px 30px 0 0;
+}
+.info-box h4 {
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #D3D3D3;
+    padding-top: 54px;
+    padding-bottom: 24px;
+    margin-bottom: 12px;
+}
+.info-box p {
+    padding: 12px 0;
+    color: #656565;
+}
+.info-box span {
+    float: right;
+    color: #333333;
+}
+.info-box p.allergy {
+    font-weight: 400;
+}
+
+#more-menu {
+    padding-top: 32px;
+    padding-bottom: 110px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    margin-top: 16px;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+.menulist {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    width: 538px;
+}
+.menulist li {
+    margin-right: 16px;
+    width: 160px;
+    position: relative;
+}
+.menulist li .img-box img {
+    width: 100%;
+}
+.menulist li .txt-box {
+    background-color: #F5EEE6;
+    border-radius: 0 0 8px 8px;
+    color: #6C5B5B;
+    padding: 16px 16px;
+    height: 100px;
+}
+.menulist li .txt-box .name {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.menulist li .txt-box .btn-add {
+    background-color: #6C5B5B;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+
+    background-image: url(../img/i_add.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.menulist li .txt-box .added {
+    background-image: url(../img/i_added.svg);
+}

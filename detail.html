@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail — mackenzie</title>
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/my-reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+   <header>
+      <div id="wrap"> 
+         <button class="btn-prev"><span class="hide">Prev</span></button>
+      </div>
+      <nav>
+         <div id="inner-wrap">
+            <ul class="gnb">
+               <li>
+                  <a href="home.html"><span class="hide">Home</span><span class="material-icons gnb act">home_filled</span></a>
+               </li>
+               <li>
+                  <a href="cart.html"><span class="hide">Cart</span><span class="material-icons gnb">shopping_cart</span></a>
+               </li>
+               <li>
+                  <a href="favorite.html"><span class="hide">Favorite</span><span class="material-icons gnb">favorite</span></a>
+               </li>
+               <li>
+                  <a href="notifications.html"><span class="hide">Notification</span><span class="material-icons gnb">notifications</span></a>
+               </li>
+            </ul> 
+         </div>
+      </nav>
+   </header>
+   <div id="wrap">
+      <section id="menu-detail">
+        <div class="menu-img"></div>
+        <div id="inner-wrap">
+            <div class="menu-info">
+                <h2>카푸치노</h2>
+                <p>풍부하고 진한 농도의 에스프레소 위에 스팀밀크와 부드럽고 풍부한 양의 우유거품을 올린 에스프레소 음료</p>
+                <div class="info-btn">
+                    <button class="btn-fav"><span class="hide">Favorite</span></button>
+                    <button class="btn-add"><span class="innertext">ADD</span></button>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="option">
+      <div id="inner-wrap">
+         <div class="container-1">
+            <p class="opt-name">온도</p>
+            <div class="select">
+                <input type="radio" id="temperature" name="temperature" checked><label for="temperature">HOT ONLY</label>
+           </div>
+         </div>
+         <div class="container-2">
+            <p class="opt-name">원두</p>
+            <div class="select">
+                <input type="radio" id="normal" name="bean" checked><label for="normal">일반</label>
+                <input type="radio" id="decaf" name="bean"><label for="decaf">디카페인</label>
+           </div>
+         </div>
+         <div class="option-3">
+            <div class="container-box">
+               <div>
+                  <p class="opt-name">시럽</p>
+                  <span class="opt-about">선택 없음</span>
+               </div>
+               <button class="btn-more"><span class="hide">시럽</span></button>
+            </div>
+            <ul class="opt-list">
+                <li>
+                    <p>바닐라 시럽</p>
+                    <div class="select-2">
+                        <input type="radio" id="syrup-3-1" name="syrup-1"><label for="syrup-3-1">많이</label></label>
+                        <input type="radio" id="syrup-2-1" name="syrup-1"><label for="syrup-2-1">보통</label>
+                        <input type="radio" id="syrup-1-1" name="syrup-1"><label for="syrup-1-1">적게</label>
+                   </div>
+                </li>
+                <li>
+                    <p>헤이즐넛 시럽</p>
+                    <div class="select-2">
+                        <input type="radio" id="syrup-3-2" name="syrup-2"><label for="syrup-3-2">많이</label></label>
+                        <input type="radio" id="syrup-2-2" name="syrup-2"><label for="syrup-2-2">보통</label>
+                        <input type="radio" id="syrup-1-2" name="syrup-2"><label for="syrup-1-2">적게</label>
+                   </div>
+                </li>
+                <li>
+                    <p>카라멜 시럽</p>
+                    <div class="select-2">
+                        <input type="radio" id="syrup-3-3" name="syrup-3"><label for="syrup-3-3">많이</label></label>
+                        <input type="radio" id="syrup-2-3" name="syrup-3"><label for="syrup-2-3">보통</label>
+                        <input type="radio" id="syrup-1-3" name="syrup-3"><label for="syrup-1-3">적게</label>
+                   </div>
+                </li>
+            </ul>
+         </div>
+         <div class="option-4">
+            <div class="container-box">
+               <div>
+                  <p class="opt-name">토핑</p>
+                  <span class="opt-about">선택 없음</span>
+               </div>
+               <button class="btn-more"><span class="hide">토핑</span></button>
+            </div>
+            <ul class="opt-list">
+                <li>
+                    <p>휘핑크림</p>
+                    <div class="select-2">
+                        <input type="radio" id="top-3-1" name="top-1"><label for="top-3-1">많이</label></label>
+                        <input type="radio" id="top-2-1" name="top-1"><label for="top-2-1">보통</label>
+                        <input type="radio" id="top-1-1" name="top-1"><label for="top-1-1">적게</label>
+                   </div>
+                </li>
+                <li>
+                    <p>카라멜 드리즐</p>
+                    <div class="select-2">
+                        <input type="radio" id="top-3-2" name="top-2"><label for="top-3-2">많이</label></label>
+                        <input type="radio" id="top-2-2" name="top-2"><label for="top-2-2">보통</label>
+                        <input type="radio" id="top-1-2" name="top-2"><label for="top-1-2">적게</label>
+                   </div>
+                </li>
+                <li>
+                    <p>초코 파우더</p>
+                    <div class="select-2">
+                        <input type="radio" id="top-3-3" name="top-3"><label for="top-3-3">많이</label></label>
+                        <input type="radio" id="top-2-3" name="top-3"><label for="top-2-3">보통</label>
+                        <input type="radio" id="top-1-3" name="top-3"><label for="top-1-3">적게</label>
+                   </div>
+                </li>
+            </ul>
+         </div>
+         <div class="container-5">
+            <div class="opt-box">
+               <p class="opt-name">상세 영양정보</p>
+               <span class="opt-about">카페인 함량: 177mg 고카페인 함유 ···</span>
+            </div>
+            <button class="btn-more btn-more-2"><span class="hide">상세보기</span></button>
+         </div>
+         <div class="container-6">
+            <form>
+                <textarea name="request" cols="100" rows="10" id="request" placeholder="별도의 요청 사항이 있으시면 적어 주세요."></textarea>
+            </form>
+         </div>
+      </div>
+      <div class="nutrition-info">
+        <div class="info-box">
+           <div id="inner-wrap">
+              <h4>상세 영양정보</h4>
+              <p>1회 제공량<span>1잔</span></p>
+              <p>총 제공량<span>355ml</span></p>
+              <p>열량(Kcal)<span>15</span></p>
+              <p>당류(g/%)<span>0/0</span></p>
+              <p>단백질(g/%)<span>1/1</span></p>
+              <p>포화지방(g/%)<span>5/1</span></p>
+              <p>나트륨(mg/%)<span>5/1</span></p>
+              <p>카페인 함량(mg)<span>177 (고카페인)</span></p>
+              <p class="allergy">알레르기 유발요인<span>해당 없음</span></p>
+           </div>
+        </div>
+     </div>
+      </section>
+      <section id="more-menu">
+        <div id="inner-wrap">
+            <p class="opt-name">디저트를 곁들여 보세요.</p>
+            <span class="opt-about">맥켄지가 추천하는 오늘의 메뉴</span>
+        </div>
+        <div class="scroll">
+            <ul class="menulist">
+               <li>
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert07.png" alt="비스켓 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">비스켓 케이크</a>
+                        <span class="price">6,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li>
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert03.png" alt="카라멜 치즈 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">카라멜 치즈 케이크</a>
+                        <span class="price">6,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+               <li>
+                  <a href="#">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert01.png" alt="스트로베리 무스 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="#" class="name">스트로베리 무스<br>케이크</a>
+                        <span class="price">6,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <footer>
+         <p class="hide">Copyright &copy; mackenzie 2022</p>
+      </footer>
+   </div>
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="js/detail.js"></script>
+</body>
+</html>
