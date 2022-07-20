@@ -79,6 +79,11 @@ section form p .login {
     border-radius: 6px;
     font-family: 'Collager';
     line-height: 48px;
+    transition: 0.3s;
+}
+section form p .login:hover {
+    background-color: #6C5B5B;
+    color: #fff;
 }
 section .break {
     width: 100%;
