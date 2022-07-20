@@ -1,4 +1,9 @@
 $(function(){
+    //prev
+    $('.btn-prev').click(function(){
+      history.back();
+    });
+
     //fav
     $('.btn-fav').click(function(){
         $(this).toggleClass('favchk')

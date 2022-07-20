@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart — mackenzie</title>
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/my-reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+   <header>
+      <div id="wrap">
+         <div id="inner-wrap">
+            <h1>cart</h1>
+         </div>
+      </div>
+      <nav>
+         <div id="inner-wrap">
+            <ul class="gnb">
+               <li>
+                  <a href="home.html"><span class="hide">Home</span><span class="material-icons gnb">home_filled</span></a>
+               </li>
+               <li>
+                  <a href="cart.html"><span class="hide">Cart</span><span class="material-icons gnb act">shopping_cart</span></a>
+               </li>
+               <li>
+                  <a href="favorite.html"><span class="hide">Favorite</span><span class="material-icons gnb">favorite</span></a>
+               </li>
+               <li>
+                  <a href="notification.html"><span class="hide">Notification</span><span class="material-icons gnb">notifications</span></a>
+               </li>
+            </ul> 
+         </div>
+      </nav>
+   </header>
+   <div id="wrap">
+      <div id="inner-wrap">
+        <section id="cart-list">
+            <ul>
+                <li>
+                    <div class="cart-menu">
+                        <img src="img/coffee/coffee04.png" alt="카푸치노">
+                        <div class="cart-info">
+                            <a href="detail.html">카푸치노</a>
+                            <span>초코 파우더 (많이)</span>
+                            <p class="price-wopt">5,000</p>
+                    </div>
+                    </div>
+                    <div class="cart-opt">
+                        <button class="btn-delete"><span class="hide">Delete</span></button>
+                        <div class="quantity">
+                            <label for="quantity1" class="hide">수량</label>
+                            <div class="cart-input">
+                                <input type="text" value="1" data-min="1" data-max="15" id="quantity1">
+                                <button class="down">-</button>
+                                <button class="up">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-menu">
+                        <img src="img/non-coffee/non08.png" alt="스팀 우유">
+                        <div class="cart-info">
+                            <a href="detail.html">스팀 우유</a>
+                            <p class="price">1,300</p>
+                        </div>
+                    </div>
+                    <div class="cart-opt">
+                        <button class="btn-delete"><span class="hide">Delete</span></button>
+                        <div class="quantity">
+                            <label for="quantity2" class="hide">수량</label>
+                            <div class="cart-input">
+                                <input type="text" value="1" data-min="1" data-max="15" id="quantity2">
+                                <button class="down">-</button>
+                                <button class="up">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-menu">
+                        <img src="img/dessert/dessert04.png" alt="치즈 무스 케이크">
+                        <div class="cart-info">
+                            <a href="detail.html">치즈 무스 케이크</a>
+                            <p class="price">7,000</p>
+                        </div>
+                    </div>
+                    <div class="cart-opt">
+                        <button class="btn-delete"><span class="hide">Delete</span></button>
+                        <div class="quantity">
+                            <label for="quantity3" class="hide">수량</label>
+                            <div class="cart-input">
+                                <input type="text" value="1" data-min="1" data-max="15" id="quantity3">
+                                <button class="down">-</button>
+                                <button class="up">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="bill">
+            <div class="total">
+                <h3>Grand Total</h3>
+                <p>13,300 ￦</p>
+            </div>
+            <div class="order-btn">
+                <button class="btn-delivery"><span>배달 주문</span></button>
+                <button class="btn-pickup"><span>픽업 예약</span></button>
+            </div>
+        </section>
+        <footer>
+            <p class="hide">Copyright &copy; mackenzie 2022</p>
+         </footer>
+      </div>
+   </div>
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="js/cart.js"></script>
+</body>
+</html>

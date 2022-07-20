@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite — mackenzie</title>
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/my-reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order-fav.css">
+    <style>
+        .tabcont {
+            padding-top: 25px;
+            padding-bottom: 90px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+      <div id="wrap">
+         <div id="inner-wrap">
+            <h1>favorite</h1>
+            <h2 class="kr">즐겨찾는 메뉴</h2>
+         </div>
+      </div>
+      <nav>
+         <div id="inner-wrap">
+            <ul class="gnb">
+               <li>
+                  <a href="home.html"><span class="hide">Home</span><span class="material-icons gnb">home_filled</span></a>
+               </li>
+               <li>
+                  <a href="cart.html"><span class="hide">Cart</span><span class="material-icons gnb">shopping_cart</span></a>
+               </li>
+               <li>
+                  <a href="favorite.html"><span class="hide">Favorite</span><span class="material-icons gnb act">favorite</span></a>
+               </li>
+               <li>
+                  <a href="notification.html"><span class="hide">Notification</span><span class="material-icons gnb">notifications</span></a>
+               </li>
+            </ul> 
+         </div>
+      </nav>
+   </header>
+   <div id="wrap">
+      <div id="menu-filter">
+         <ul>
+            <li class="active" data-tab="section-coffee"><a href="#">Coffee</a></li>
+            <li data-tab="section-non"><a href="#">Non-Coffee</a></li>
+            <li data-tab="section-dessert"><a href="#">Dessert</a></li>
+         </ul>
+      </div>
+      <section id="section-coffee" class="tabcont active">
+         <div id="inner-wrap">
+            <h3 class="hide">메뉴 리스트</h3>
+            <ul class="order-menulist">
+               <li class="espresso-variation">
+                  <a href="detail.html">
+                     <div class="img-box">
+                        <img src="img/coffee/coffee04.png" alt="카푸치노">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="detail.html" class="name">카푸치노</a>
+                        <span class="price">5,000</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section id="section-non" class="tabcont">
+         <div id="inner-wrap">
+            <h3 class="hide">메뉴 리스트</h3>
+            <ul class="order-menulist">
+               <li class="tea-variation">
+                  <a href="detail.html">
+                     <div class="img-box">
+                        <img src="img/non-coffee/non02.png" alt="캐모마일티">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="detail.html" class="name">캐모마일티</a>
+                        <span class="price">5,100</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section id="section-dessert" class="tabcont">
+         <div id="inner-wrap">
+            <h3 class="hide">메뉴 리스트</h3>
+            <ul class="order-menulist">
+               <li>
+                  <a href="detail.html">
+                     <div class="img-box">
+                        <img src="img/dessert/dessert02.png" alt="베리 쉬폰 케이크">
+                     </div>
+                  </a>
+                  <div class="txt-box">
+                     <p class="info">
+                        <a href="detail.html" class="name">베리 쉬폰 케이크</a>
+                        <span class="price">6,500</span>
+                     </p>
+                     <button class="btn-add"><span class="hide">ADD</span></button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <div class="popup-search">
+         <div class="search-box">
+            <div id="inner-wrap">
+               <h4>search</h4>
+               <form action="#">
+                  <label for="searchword" class="hide">Search</label>
+                  <input type="text" id="searchword" placeholder="어떤 메뉴를 찾으세요?">
+                  <button type="button" class="btn-box-search">Search</button>
+               </form>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <p class="hide">Copyright &copy; mackenzie 2022</p>
+      </footer>
+   </div>
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+   <script src="js/isotope.pkgd.min.js"></script>
+   <script src="js/favorite.js"></script>
+</body>
+</html>
