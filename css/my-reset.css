@@ -36,13 +36,13 @@ body {
   color: #333;
   user-select: none;
 }
-#wrap {
+.wrap {
   min-width: 280px;
   max-width: 768px;
   margin: 0 auto;
   height: 100%;
 }
-#inner-wrap {
+.inner-wrap {
   margin: 0 25px;
 }
 
