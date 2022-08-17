@@ -8,7 +8,7 @@ header {
     }
 }
 
-#inner-wrap {
+.inner-wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

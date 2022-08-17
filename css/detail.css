@@ -1,7 +1,7 @@
 header {
     padding: 0;
 }
-#wrap {
+.wrap {
     position: relative;
 }
 .btn-prev {
